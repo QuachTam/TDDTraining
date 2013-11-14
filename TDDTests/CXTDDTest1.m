@@ -59,6 +59,7 @@ SPEC_BEGIN(Test1)
             NSInteger countAfter  = 0;
             
             Stack1 *_stack = [[Stack1 alloc] init];
+            NSString *_string = [NSString nullMock];
             [_stack push:_string];
             countBefore = [_stack count];
             
