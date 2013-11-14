@@ -59,8 +59,9 @@ SPEC_BEGIN(Test1)
             NSInteger countAfter  = 0;
             
             Stack1 *_stack = [[Stack1 alloc] init];
-            
+            [_stack push:_string];
             countBefore = [_stack count];
+            
             countAfter = [_stack count];
             [[theValue(countBefore) should] equal:theValue(countAfter + 1)];
         });
