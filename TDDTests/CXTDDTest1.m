@@ -44,7 +44,7 @@ SPEC_BEGIN(Test1)
             Stack1 *_stack = [[Stack1 alloc] init];
             NSString *_string  = [NSString nullMock];
             [_stack push:_string];
-            [[[_stack pop] should] equal:_string];
+            [[[_stack top] should] equal:_string];
         });
         
         it(@"Step 6: Stack is empty, pop 1 element, exception error ", ^{
@@ -62,9 +62,9 @@ SPEC_BEGIN(Test1)
             NSString *_string = [NSString nullMock];
             [_stack push:_string];
             countBefore = [_stack count];
-            
-            countAfter = [_stack count];
-            [[theValue(countBefore) should] equal:theValue(countAfter + 1)];
+            [_stack pop];
+            countAfter = [_stack count]+1;
+            [[theValue(countBefore) should] equal:theValue(countAfter)];
         });
     });
 SPEC_END
