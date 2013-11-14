@@ -66,5 +66,9 @@ SPEC_BEGIN(Test1)
             countAfter = [_stack count]+1;
             [[theValue(countBefore) should] equal:theValue(countAfter)];
         });
+        
+        it(@"Step 8: Stack have 1 element, pop 1 element then check Stack is empty", ^{
+            [[theValue([_stack count]) should] equal:theValue(0)];
+        });
     });
 SPEC_END
