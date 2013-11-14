@@ -39,5 +39,9 @@ SPEC_BEGIN(Test1)
             Stack1 *_stack = [[Stack1 alloc] init];
             [[_stack pop] shouldBeNil];
         });
+        
+        it(@"Step 5: Stack is empty, push() 1 element then top() self", ^{
+            [[[_stack pop] should] equal:_string];
+        });
     });
 SPEC_END
