@@ -69,6 +69,7 @@ SPEC_BEGIN(Test1)
         
         it(@"Step 8: Stack have 1 element, pop 1 element then check Stack is empty", ^{
             Stack1 *_stack = [[Stack1 alloc] init];
+            NSString *_string = [NSString nullMock];
             [_stack push:_string];
             [[theValue([_stack count]) should] equal:theValue(0)];
         });
