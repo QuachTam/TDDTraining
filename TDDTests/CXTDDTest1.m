@@ -26,7 +26,8 @@ SPEC_BEGIN(Test1)
         it(@"Step 3: Stack have k element, push 1 element, check Stack count equal k+1", ^{
             NSInteger countBefore;
             NSInteger counttAfter;
-            
+            Stack1 *_stack = [[Stack1 alloc] init];
+            NSString *_string = [NSString nullMock];
             [_stack push:_string];
             
             [[theValue(countBefore+1) should] equal:theValue(counttAfter)];
