@@ -27,6 +27,9 @@
 }
 
 -(NSString*)pop{
+    if ([arrayStack count]) {
+        return [arrayStack objectAtIndex:0];
+    }
     return nil;
 }
 @end
