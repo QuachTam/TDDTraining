@@ -9,7 +9,16 @@
 #import "Stack1.h"
 
 @implementation Stack1
+
+-(id)init{
+    self = [super init];
+    if (!self) {
+        arrayStack = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
 -(NSInteger)count{
-    return 0;
+    return [arrayStack count];
 }
 @end

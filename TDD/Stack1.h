@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Stack1 : NSObject
+@interface Stack1 : NSObject{
+    NSMutableArray *arrayStack;
+}
+
 -(NSInteger)count;
 @end
