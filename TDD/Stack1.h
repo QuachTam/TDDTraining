@@ -14,4 +14,5 @@
 
 -(NSInteger)count;
 -(void)push:(NSString*)_string;
+-(NSString*)pop;
 @end

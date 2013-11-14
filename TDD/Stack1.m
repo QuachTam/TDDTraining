@@ -25,4 +25,8 @@
 -(void)push:(NSString*)_string{
     [arrayStack addObject:_string];
 }
+
+-(NSString*)pop{
+    return nil;
+}
 @end
