@@ -36,7 +36,8 @@ SPEC_BEGIN(Test1)
         });
         
         it(@"Step 4: Stack is empty, pop equal null", ^{
-            [_string shouldBeNil];
+            
+            [[_stack pop] shouldBeNil];
         });
     });
 SPEC_END
