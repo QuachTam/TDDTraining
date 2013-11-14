@@ -36,7 +36,7 @@ SPEC_BEGIN(Test1)
         });
         
         it(@"Step 4: Stack is empty, pop equal null", ^{
-            
+            Stack1 *_stack = [[Stack1 alloc] init];
             [[_stack pop] shouldBeNil];
         });
     });
