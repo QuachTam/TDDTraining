@@ -28,8 +28,10 @@ SPEC_BEGIN(Test1)
             NSInteger counttAfter;
             Stack1 *_stack = [[Stack1 alloc] init];
             NSString *_string = [NSString nullMock];
-            [_stack push:_string];
             
+            countBefore = [_stack count];
+            [_stack push:_string];
+            counttAfter = [_stack count];
             [[theValue(countBefore+1) should] equal:theValue(counttAfter)];
         });
     });
