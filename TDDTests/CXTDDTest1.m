@@ -57,6 +57,9 @@ SPEC_BEGIN(Test1)
         it(@"Step 7: Stack is k element, pop 1 element, Stack count equal k-1", ^{
             NSInteger countBefore = 0;
             NSInteger countAfter  = 0;
+            
+            countBefore = [_stack count];
+            countAfter = [_stack count];
             [[theValue(countBefore) should] equal:theValue(countAfter + 1)];
         });
     });
