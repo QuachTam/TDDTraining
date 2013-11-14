@@ -74,5 +74,9 @@ SPEC_BEGIN(Test1)
             [_stack pop];
             [[theValue([_stack count]) should] equal:theValue(0)];
         });
+        
+        it(@"Step 9: Stack have k element, top() element at index p and pop element at index p", ^{
+            
+        });
     });
 SPEC_END
