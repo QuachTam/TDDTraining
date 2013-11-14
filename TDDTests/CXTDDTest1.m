@@ -53,5 +53,9 @@ SPEC_BEGIN(Test1)
                 [_stack pop];
             }) should] raiseWithName:@"Error" reason:nil];
         });
+        
+        it(@"Step 7: Stack is k element, pop 1 element, Stack count equal k-1", ^{
+            [[theValue(countBefore) should] equal:theValue(countAfter + 1)];
+        });
     });
 SPEC_END
