@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AE1C6F5D-FC20-49FA-8375-C7E81BA3B781</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TDD</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1378B799-272E-4A41-9B97-8088A027BBC8</key>
+		<string>https://github.com/QuachTam/TDD_Example.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TDD/TDD.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1378B799-272E-4A41-9B97-8088A027BBC8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/QuachTam/TDD_Example.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1378B799-272E-4A41-9B97-8088A027BBC8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1378B799-272E-4A41-9B97-8088A027BBC8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ExampleTDD</string>
+		</dict>
+	</array>
+</dict>
+</plist>
