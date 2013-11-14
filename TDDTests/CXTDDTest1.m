@@ -22,5 +22,9 @@ SPEC_BEGIN(Test1)
             [_stack push:_string];
             [[theValue([_stack count]) should] equal:theValue(1)];
         });
+        
+        it(@"Step 3: Stack have k element, push 1 element, check Stack count equal k+1", ^{
+            [[theValue(countBefore+1) should] equal:theValue(cuontAfter)];
+        });
     });
 SPEC_END
