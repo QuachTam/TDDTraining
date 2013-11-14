@@ -18,6 +18,7 @@ SPEC_BEGIN(Test1)
         
         it(@"Step 2: Stack is empty, push 1 element and check Stack count equal 1", ^{
             Stack1 *_stack = [[Stack1 alloc] init];
+            [_stack push:_string];
             [[theValue([_stack count]) should] equal:theValue(1)];
         });
     });
