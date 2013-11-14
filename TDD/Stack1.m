@@ -21,4 +21,8 @@
 -(NSInteger)count{
     return [arrayStack count];
 }
+
+-(void)push:(NSString*)_string{
+    [arrayStack addObject:_string];
+}
 @end

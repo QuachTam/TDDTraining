@@ -13,4 +13,5 @@
 }
 
 -(NSInteger)count;
+-(void)push:(NSString*)_string;
 @end
