@@ -30,6 +30,14 @@
     if ([arrayStack count]) {
         return [arrayStack objectAtIndex:0];
     }
+    
+    NSException *err = [NSException exceptionWithName:@"Error" reason:nil userInfo:nil];
+    @throw err;
+}
+-(NSString*)top{
+    if ([arrayStack count]) {
+        return [arrayStack objectAtIndex:0];
+    }
     return nil;
 }
 @end

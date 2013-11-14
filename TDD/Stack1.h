@@ -15,4 +15,5 @@
 -(NSInteger)count;
 -(void)push:(NSString*)_string;
 -(NSString*)pop;
+-(NSString*)top;
 @end

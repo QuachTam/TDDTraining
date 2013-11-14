@@ -37,7 +37,7 @@ SPEC_BEGIN(Test1)
         
         it(@"Step 4: Stack is empty, pop equal null", ^{
             Stack1 *_stack = [[Stack1 alloc] init];
-            [[_stack pop] shouldBeNil];
+            [[_stack top] shouldBeNil];
         });
         
         it(@"Step 5: Stack is empty, push() 1 element then top() self", ^{
@@ -48,6 +48,7 @@ SPEC_BEGIN(Test1)
         });
         
         it(@"Step 6: Stack is empty, pop 1 element, exception error ", ^{
+            Stack1 *_stack = [[Stack1 alloc] init];
             [[theBlock(^{
                 [_stack pop];
             }) should] raiseWithName:@"Error" reason:nil];
