@@ -24,7 +24,9 @@ SPEC_BEGIN(Test1)
         });
         
         it(@"Step 3: Stack have k element, push 1 element, check Stack count equal k+1", ^{
-            [[theValue(countBefore+1) should] equal:theValue(cuontAfter)];
+            NSInteger countBefore;
+            NSInteger counttAfter;
+            [[theValue(countBefore+1) should] equal:theValue(counttAfter)];
         });
     });
 SPEC_END
