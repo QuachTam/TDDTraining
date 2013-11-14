@@ -63,9 +63,8 @@ SPEC_BEGIN(ObjStack)
             [_stack pop];
             NSInteger countAfterPop = [_stack count];
             [[theValue(countBeforePop-1) should] equal:theValue(countAfterPop)];
-            
-//            xxx
         });
+        
     });
 
 SPEC_END
