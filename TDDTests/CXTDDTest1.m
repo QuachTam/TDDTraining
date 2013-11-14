@@ -10,6 +10,8 @@
 
 SPEC_BEGIN(Test1)
     describe(@"TDD kata 1", ^{
-       
+       it(@"Step 1: create Stack, check Stack count equal 0", ^{
+           [[theValue([_stack count]) should] equal: theValue(0)];
+       });
     });
 SPEC_END
