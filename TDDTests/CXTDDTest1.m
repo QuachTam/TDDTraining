@@ -46,5 +46,11 @@ SPEC_BEGIN(Test1)
             [_stack push:_string];
             [[[_stack pop] should] equal:_string];
         });
+        
+        it(@"Step 6: Stack is empty, pop 1 element, exception error ", ^{
+            [[theBlock(^{
+                [_stack pop];
+            }) should] raiseWithName:@"Error" reason:nil];
+        });
     });
 SPEC_END
