@@ -34,5 +34,9 @@ SPEC_BEGIN(Test1)
             counttAfter = [_stack count];
             [[theValue(countBefore+1) should] equal:theValue(counttAfter)];
         });
+        
+        it(@"Step 4: Stack is empty, pop equal null", ^{
+            [_string shouldBeNil];
+        });
     });
 SPEC_END
