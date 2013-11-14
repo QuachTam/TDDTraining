@@ -9,5 +9,7 @@
 #import "Stack1.h"
 
 @implementation Stack1
-
+-(NSInteger)count{
+    return 0;
+}
 @end

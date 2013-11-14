@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Stack1 : NSObject
-
+-(NSInteger)count;
 @end
