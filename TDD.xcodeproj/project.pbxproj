@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		56E933B665744CDCB8F7947A /* libPods-TDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C278688F89493D87B34CBB /* libPods-TDDTests.a */; };
 		6EB372C31834A8F400182D65 /* CXTDDTest1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB372C21834A8F400182D65 /* CXTDDTest1.m */; };
+		6EB372C61834AA6900182D65 /* Stack1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB372C51834AA6900182D65 /* Stack1.m */; };
+		6EB372C71834AA6900182D65 /* Stack1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB372C51834AA6900182D65 /* Stack1.m */; };
 		6EBB09FF1833556C00B5A3E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBB09FE1833556C00B5A3E3 /* Foundation.framework */; };
 		6EBB0A011833556C00B5A3E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBB0A001833556C00B5A3E3 /* CoreGraphics.framework */; };
 		6EBB0A031833556C00B5A3E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBB0A021833556C00B5A3E3 /* UIKit.framework */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		6EB372C21834A8F400182D65 /* CXTDDTest1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTDDTest1.m; sourceTree = "<group>"; };
+		6EB372C41834AA6900182D65 /* Stack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack1.h; sourceTree = "<group>"; };
+		6EB372C51834AA6900182D65 /* Stack1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack1.m; sourceTree = "<group>"; };
 		6EBB09FB1833556C00B5A3E3 /* TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBB09FE1833556C00B5A3E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6EBB0A001833556C00B5A3E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +135,8 @@
 				6EBB0A141833556C00B5A3E3 /* ViewController.m */,
 				6EBB0A3A183359B700B5A3E3 /* Stack.h */,
 				6EBB0A3B183359B700B5A3E3 /* Stack.m */,
+				6EB372C41834AA6900182D65 /* Stack1.h */,
+				6EB372C51834AA6900182D65 /* Stack1.m */,
 				6EBB0A161833556C00B5A3E3 /* Images.xcassets */,
 				6EBB0A051833556C00B5A3E3 /* Supporting Files */,
 			);
@@ -297,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB372C61834AA6900182D65 /* Stack1.m in Sources */,
 				6EBB0A3C183359B700B5A3E3 /* Stack.m in Sources */,
 				6EBB0A151833556C00B5A3E3 /* ViewController.m in Sources */,
 				6EBB0A0F1833556C00B5A3E3 /* AppDelegate.m in Sources */,
@@ -310,6 +317,7 @@
 			files = (
 				6EBB0A3D183359B700B5A3E3 /* Stack.m in Sources */,
 				6EB372C31834A8F400182D65 /* CXTDDTest1.m in Sources */,
+				6EB372C71834AA6900182D65 /* Stack1.m in Sources */,
 				6EBB0A35183357CF00B5A3E3 /* CXTDDTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

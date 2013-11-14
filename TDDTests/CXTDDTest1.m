@@ -7,11 +7,12 @@
 //
 
 #import "Kiwi.h"
+#import "Stack1.h"
 
 SPEC_BEGIN(Test1)
     describe(@"TDD kata 1", ^{
        it(@"Step 1: create Stack, check Stack count equal 0", ^{
-           Stack *_stack = [[Stack alloc] init];
+           Stack1 *_stack = [[Stack1 alloc] init];
            [[theValue([_stack count]) should] equal: theValue(0)];
        });
     });
