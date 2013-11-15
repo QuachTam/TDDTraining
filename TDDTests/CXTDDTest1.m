@@ -79,9 +79,7 @@ SPEC_BEGIN(Test1)
             Stack1 *_stack = [[Stack1 alloc] init];
             NSString *_string = [NSString nullMock];
             [_stack push:_string];
-            
             [[[_stack top] should] equal:_string];
-    
             [_stack pop];
         });
     });
