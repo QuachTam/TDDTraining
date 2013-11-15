@@ -33,6 +33,7 @@
     }
     [arrayStack removeObjectAtIndex:0];
 }
+
 -(NSString*)top{
     if ([arrayStack count]) {
         return [arrayStack objectAtIndex:0];
