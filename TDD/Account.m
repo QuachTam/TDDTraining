@@ -17,5 +17,7 @@
     }
     return self;
 }
-
+-(NSInteger)balanceCount{
+    return balance;
+}
 @end

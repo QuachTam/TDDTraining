@@ -13,5 +13,5 @@
     double balance;
     NSDate *openTimestamp;
 }
-
+-(NSInteger)balanceCount;
 @end
