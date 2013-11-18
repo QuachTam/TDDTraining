@@ -9,5 +9,13 @@
 #import "Account.h"
 
 @implementation Account
+-(id)init{
+    self = [super init];
+    if (self) {
+        balance =  0;
+        openTimestamp = [NSDate date];
+    }
+    return self;
+}
 
 @end

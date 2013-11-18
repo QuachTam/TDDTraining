@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Account : NSObject
+@interface Account : NSObject{
+    NSString *accountNumber;
+    double balance;
+    NSDate *openTimestamp;
+}
 
 @end
