@@ -8,7 +8,18 @@
 
 #import "BankAccount.h"
 
+
+
 @implementation BankAccount
+
+-(id)init{
+    self = [super init];
+    if (self) {
+        _account = [[Account alloc] init];
+    }
+    return self;
+}
+
 -(NSInteger)balanceCount{
     return 0;
 }

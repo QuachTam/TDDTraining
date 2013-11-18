@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BankAccount : NSObject
+@interface BankAccount : NSObject{
+    Account *_account;
+}
 -(NSInteger)balanceCount;
 @end
