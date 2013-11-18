@@ -21,6 +21,6 @@
 }
 
 -(NSInteger)balanceCount{
-    return 0;
+    return [_account balanceCount];
 }
 @end
