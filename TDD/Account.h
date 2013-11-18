@@ -1,5 +1,5 @@
 //
-//  BankAccount.h
+//  Account.h
 //  TDD
 //
 //  Created by Quach Ngoc Tam on 11/18/13.
@@ -7,10 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Account.h"
 
-@interface BankAccount : NSObject{
-    Account *_account;
-}
--(NSInteger)balanceCount;
+@interface Account : NSObject
+
 @end

@@ -11,6 +11,8 @@
 		6E46C06F1839EF3000E5718D /* CXTTDDKata2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46C06E1839EF3000E5718D /* CXTTDDKata2.m */; };
 		6E46C0721839F15100E5718D /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46C0711839F15100E5718D /* BankAccount.m */; };
 		6E46C0731839F15100E5718D /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46C0711839F15100E5718D /* BankAccount.m */; };
+		6E46C0761839F2A600E5718D /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46C0751839F2A600E5718D /* Account.m */; };
+		6E46C0771839F2A600E5718D /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46C0751839F2A600E5718D /* Account.m */; };
 		6EB372C31834A8F400182D65 /* CXTDDTest1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB372C21834A8F400182D65 /* CXTDDTest1.m */; };
 		6EB372C61834AA6900182D65 /* Stack1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB372C51834AA6900182D65 /* Stack1.m */; };
 		6EB372C71834AA6900182D65 /* Stack1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB372C51834AA6900182D65 /* Stack1.m */; };
@@ -46,6 +48,8 @@
 		6E46C06E1839EF3000E5718D /* CXTTDDKata2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTTDDKata2.m; sourceTree = "<group>"; };
 		6E46C0701839F15100E5718D /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
 		6E46C0711839F15100E5718D /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+		6E46C0741839F2A600E5718D /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		6E46C0751839F2A600E5718D /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		6EB372C21834A8F400182D65 /* CXTDDTest1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTDDTest1.m; sourceTree = "<group>"; };
 		6EB372C41834AA6900182D65 /* Stack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack1.h; sourceTree = "<group>"; };
 		6EB372C51834AA6900182D65 /* Stack1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack1.m; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 				6EBB0A3B183359B700B5A3E3 /* Stack.m */,
 				6EB372C41834AA6900182D65 /* Stack1.h */,
 				6EB372C51834AA6900182D65 /* Stack1.m */,
+				6E46C0741839F2A600E5718D /* Account.h */,
+				6E46C0751839F2A600E5718D /* Account.m */,
 				6E46C0701839F15100E5718D /* BankAccount.h */,
 				6E46C0711839F15100E5718D /* BankAccount.m */,
 				6EBB0A161833556C00B5A3E3 /* Images.xcassets */,
@@ -316,6 +322,7 @@
 				6E46C0721839F15100E5718D /* BankAccount.m in Sources */,
 				6EBB0A3C183359B700B5A3E3 /* Stack.m in Sources */,
 				6EBB0A151833556C00B5A3E3 /* ViewController.m in Sources */,
+				6E46C0761839F2A600E5718D /* Account.m in Sources */,
 				6EBB0A0F1833556C00B5A3E3 /* AppDelegate.m in Sources */,
 				6EBB0A0B1833556C00B5A3E3 /* main.m in Sources */,
 			);
@@ -329,6 +336,7 @@
 				6E46C0731839F15100E5718D /* BankAccount.m in Sources */,
 				6E46C06F1839EF3000E5718D /* CXTTDDKata2.m in Sources */,
 				6EB372C31834A8F400182D65 /* CXTDDTest1.m in Sources */,
+				6E46C0771839F2A600E5718D /* Account.m in Sources */,
 				6EB372C71834AA6900182D65 /* Stack1.m in Sources */,
 				6EBB0A35183357CF00B5A3E3 /* CXTDDTest.m in Sources */,
 			);
