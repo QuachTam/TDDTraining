@@ -12,6 +12,7 @@ SPEC_BEGIN(kata2)
     describe(@"Start kata2 with BankAccount", ^{
        it(@"Step 1 open account with balace = 0", ^{
            BankAccount *_bank = [[BankAccount alloc] init];
+           NSString *_accountNumber = [NSString nullMock];
            [_bank open:_accountNumber];
            [[theValue([_bank balanceCount]) should] equal:theValue(0)];
        });
