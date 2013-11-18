@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface BankAccount : NSObject
-
+-(NSInteger)balanceCount;
 @end

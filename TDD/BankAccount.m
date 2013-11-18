@@ -9,5 +9,7 @@
 #import "BankAccount.h"
 
 @implementation BankAccount
-
+-(NSInteger)balanceCount{
+    return 0;
+}
 @end
