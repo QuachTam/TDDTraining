@@ -11,6 +11,7 @@
 SPEC_BEGIN(kata2)
     describe(@"Start kata2 with BankAccount", ^{
        it(@"Step 1 open account with balace = 0", ^{
+           BankAccount *_bank = [[BankAccount alloc] init];
            [[theValue([_bank balanceCount]) should] equal:theValue(0)];
        });
     });
