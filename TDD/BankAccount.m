@@ -15,9 +15,14 @@
 -(id)init{
     self = [super init];
     if (self) {
-        _account = [[Account alloc] init];
+        
     }
     return self;
+}
+
+-(void)open:(NSString*)accountNumber{
+    _account = [[Account alloc] init];
+    [_account setAccountNumber:accountNumber];
 }
 
 -(NSInteger)balanceCount{

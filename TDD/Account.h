@@ -13,5 +13,6 @@
     double balance;
     NSDate *openTimestamp;
 }
+-(void)setAccountNumber:(NSString*)number;
 -(NSInteger)balanceCount;
 @end

@@ -20,4 +20,8 @@
 -(NSInteger)balanceCount{
     return balance;
 }
+
+-(void)setAccountNumber:(NSString*)number{
+    accountNumber = number;
+}
 @end
