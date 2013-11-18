@@ -7,7 +7,7 @@
 //
 
 #import "Kiwi.h"
-
+#import "BankAccount.h"
 SPEC_BEGIN(kata2)
     describe(@"Start kata2 with BankAccount", ^{
        it(@"Step 1 open account with balace = 0", ^{
