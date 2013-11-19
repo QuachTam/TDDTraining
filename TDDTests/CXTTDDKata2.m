@@ -30,6 +30,8 @@ SPEC_BEGIN(kata2)
             });
             
             it(@"Step 2: get info account", ^{
+                BankAccount *_bank = [[BankAccount alloc] init];
+                NSString *_numberAccount = [NSString nullMock];
                 [[[_bank getAccountNumber] should] equal:_numberAccount];
             });
         });

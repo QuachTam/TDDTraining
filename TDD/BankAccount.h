@@ -12,6 +12,7 @@
 @interface BankAccount : NSObject{
     Account *_account;
 }
+-(NSString*)getAccountNumber;
 -(void)open:(NSString*)accountNumber;
 -(NSInteger)balanceCount;
 @end

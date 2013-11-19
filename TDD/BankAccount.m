@@ -28,4 +28,8 @@
 -(NSInteger)balanceCount{
     return [_account balanceCount];
 }
+
+-(NSString*)getAccountNumber{
+    return nil;
+}
 @end
