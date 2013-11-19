@@ -15,4 +15,5 @@
 -(Account*)getAccountWithNumber:(NSString*)numberAcc;
 -(void)open:(NSString*)accountNumber;
 -(NSInteger)balanceCount;
+
 @end

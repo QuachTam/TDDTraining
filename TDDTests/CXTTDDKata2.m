@@ -47,6 +47,9 @@ SPEC_BEGIN(kata2)
                 Account *_accountAfter;
                 NSInteger amount = 10;
                 NSString *accountNumber = [NSString nullMock];
+                NSString *description = [NSString nullMock];
+                
+                BankAccount *_bank = [[BankAccount alloc] init];
                 
                 _accountAfter = [_bank depositWithAccountNumber:accountNumber Amount:amount Description:description];
                 
