@@ -42,6 +42,9 @@ SPEC_BEGIN(kata2)
             });
             
             it(@"Step 3: sent money to my account and check deposit", ^{
+                Account *_accountBefore = [Account nullMock];
+                Account *_accountAfter;
+                NSInteger amount = 10;
                 [[theValue(_accountAfter.balance) should] equal:theValue(_accountBefore.balance + amount)];
             });
         });
