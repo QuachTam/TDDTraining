@@ -36,8 +36,8 @@ SPEC_BEGIN(kata2)
                 NSString *_numberAccount = [NSString nullMock];
                 
                 Account *_acc = [Account nullMock];
-                [_bank stub:@selector(getAccountNumber) andReturn:_acc withArguments:_numberAccount];
-                
+                [_acc stub:@selector(getAccountNumber) andReturn:_numberAccount];
+                [_bank stub:@selector(getAccountWithNumber:) andReturn:_acc withArguments:_numberAccount];
                 [[[_acc getAccountNumber] should] equal:_numberAccount];
             });
         });
