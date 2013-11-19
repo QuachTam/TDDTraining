@@ -32,6 +32,8 @@
 		6EBB0A35183357CF00B5A3E3 /* CXTDDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB0A34183357CF00B5A3E3 /* CXTDDTest.m */; };
 		6EBB0A3C183359B700B5A3E3 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB0A3B183359B700B5A3E3 /* Stack.m */; };
 		6EBB0A3D183359B700B5A3E3 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB0A3B183359B700B5A3E3 /* Stack.m */; };
+		6EC2F38B183B4BE700A52D0D /* BankAccountDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC2F38A183B4BE700A52D0D /* BankAccountDAO.m */; };
+		6EC2F38C183B4BE700A52D0D /* BankAccountDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC2F38A183B4BE700A52D0D /* BankAccountDAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		6EBB0A34183357CF00B5A3E3 /* CXTDDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTDDTest.m; sourceTree = "<group>"; };
 		6EBB0A3A183359B700B5A3E3 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		6EBB0A3B183359B700B5A3E3 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		6EC2F389183B4BE700A52D0D /* BankAccountDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDAO.h; sourceTree = "<group>"; };
+		6EC2F38A183B4BE700A52D0D /* BankAccountDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAO.m; sourceTree = "<group>"; };
 		8AA53EB701D94F0F90BD70E5 /* Pods-TDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDTests.xcconfig"; path = "Pods/Pods-TDDTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		C2C278688F89493D87B34CBB /* libPods-TDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,6 +155,8 @@
 				6E46C0751839F2A600E5718D /* Account.m */,
 				6E46C0701839F15100E5718D /* BankAccount.h */,
 				6E46C0711839F15100E5718D /* BankAccount.m */,
+				6EC2F389183B4BE700A52D0D /* BankAccountDAO.h */,
+				6EC2F38A183B4BE700A52D0D /* BankAccountDAO.m */,
 				6EBB0A161833556C00B5A3E3 /* Images.xcassets */,
 				6EBB0A051833556C00B5A3E3 /* Supporting Files */,
 			);
@@ -318,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC2F38B183B4BE700A52D0D /* BankAccountDAO.m in Sources */,
 				6EB372C61834AA6900182D65 /* Stack1.m in Sources */,
 				6E46C0721839F15100E5718D /* BankAccount.m in Sources */,
 				6EBB0A3C183359B700B5A3E3 /* Stack.m in Sources */,
@@ -332,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC2F38C183B4BE700A52D0D /* BankAccountDAO.m in Sources */,
 				6EBB0A3D183359B700B5A3E3 /* Stack.m in Sources */,
 				6E46C0731839F15100E5718D /* BankAccount.m in Sources */,
 				6E46C06F1839EF3000E5718D /* CXTTDDKata2.m in Sources */,
