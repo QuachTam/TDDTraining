@@ -43,8 +43,13 @@ SPEC_BEGIN(kata2)
             
             it(@"Step 3: sent money to my account and check deposit", ^{
                 Account *_accountBefore = [Account nullMock];
+                [_accountBefore stub:@selector(balance) andReturn:@0];
                 Account *_accountAfter;
                 NSInteger amount = 10;
+                NSString *accountNumber = [NSString nullMock];
+                
+                _accountAfter = [_bank depositWithAccountNumber:accountNumber Amount:amount Description:description];
+                
                 [[theValue(_accountAfter.balance) should] equal:theValue(_accountBefore.balance + amount)];
             });
         });
