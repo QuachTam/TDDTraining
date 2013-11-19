@@ -13,6 +13,8 @@
     double balance;
     NSDate *openTimestamp;
 }
+@property (nonatomic, readwrite) double balance;
+@property (nonatomic, readwrite) NSDate *openTimestamp;
 -(void)setAccountNumber:(NSString*)number;
 -(NSString*)getAccountNumber;
 -(NSInteger)balanceCount;

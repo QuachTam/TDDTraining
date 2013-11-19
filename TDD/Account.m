@@ -9,6 +9,7 @@
 #import "Account.h"
 
 @implementation Account
+@synthesize openTimestamp, balance;
 -(id)init{
     self = [super init];
     if (self) {

@@ -31,7 +31,7 @@ SPEC_BEGIN(kata2)
                 [[theValue([_bank balanceCount]) should] equal:theValue(0)];
             });
             
-            it(@"Step 2: get info account", ^{
+            it(@"Step 2: get account with numberAccount ", ^{
                 BankAccount *_bank = [[BankAccount alloc] init];
                 NSString *_numberAccount = [NSString nullMock];
                 
@@ -39,6 +39,10 @@ SPEC_BEGIN(kata2)
                 [_acc stub:@selector(getAccountNumber) andReturn:_numberAccount];
                 [_bank stub:@selector(getAccountWithNumber:) andReturn:_acc withArguments:_numberAccount];
                 [[[_acc getAccountNumber] should] equal:_numberAccount];
+            });
+            
+            it(@"Step 3: sent money to my account and check deposit", ^{
+                [[theValue(_accountAfter.balance) should] equal:theValue(_accountBefore.balance + amount)];
             });
         });
     });
