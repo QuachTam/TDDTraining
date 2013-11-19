@@ -8,6 +8,8 @@
 
 #import "Kiwi.h"
 #import "BankAccount.h"
+#import "Account.h"
+
 SPEC_BEGIN(kata2)
     describe(@"Start kata2 with BankAccount", ^{
         
