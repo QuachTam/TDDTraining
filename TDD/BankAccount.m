@@ -29,7 +29,7 @@
     return [_account balanceCount];
 }
 
--(NSString*)getAccountNumber{
-    return [_account getAccountNumber];
+-(Account*)getAccountWithNumber:(NSString*)numberAcc{
+    return [_bankDao getAccountNumber:numberAcc];
 }
 @end
