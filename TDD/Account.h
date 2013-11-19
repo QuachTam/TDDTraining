@@ -14,5 +14,6 @@
     NSDate *openTimestamp;
 }
 -(void)setAccountNumber:(NSString*)number;
+-(NSString*)getAccountNumber;
 -(NSInteger)balanceCount;
 @end

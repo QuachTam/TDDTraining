@@ -24,4 +24,8 @@
 -(void)setAccountNumber:(NSString*)number{
     accountNumber = number;
 }
+
+-(NSString*)getAccountNumber{
+    return nil;
+}
 @end
