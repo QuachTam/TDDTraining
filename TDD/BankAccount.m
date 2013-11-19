@@ -30,6 +30,7 @@
 }
 
 -(Account*)getAccountWithNumber:(NSString*)numberAcc{
+    BankAccountDAO *_bankDao = [[BankAccountDAO alloc] init];
     return [_bankDao getAccountNumber:numberAcc];
 }
 @end
