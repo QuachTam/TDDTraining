@@ -30,6 +30,6 @@
 }
 
 -(NSString*)getAccountNumber{
-    return nil;
+    return [_account getAccountNumber];
 }
 @end
