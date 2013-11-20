@@ -32,6 +32,19 @@
 
 -(Account*)getAccountWithNumber:(NSString*)numberAcc{
     BankAccountDAO *_bankDao = [[BankAccountDAO alloc] init];
-    return [_bankDao getAccountNumber:numberAcc];
+    return [_bankDao getAccountNumberDAO:numberAcc];
+}
+
+-(Account*)depositWithAccountNumber:(NSString*)accountNumber
+                         Amount:(double)amount
+                    Description:(NSString*)description{
+    Account* BF = [self getAccountWithNumber:accountNumber];
+    Account* AT = [[Account alloc] init];
+    AT.balance = BF.balance;
+    AT.accountNumber = BF.accountNumber;
+    AT.openTimestamp = BF.openTimestamp;
+    
+    AT.balance +=amount;
+    return AT;
 }
 @end

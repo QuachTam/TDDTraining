@@ -10,5 +10,5 @@
 #import "Account.h"
 
 @interface BankAccountDAO : NSObject
--(Account*)getAccountNumber:(NSString*)numberAccount;
+-(Account*)getAccountNumberDAO:(NSString*)numberAccount;
 @end

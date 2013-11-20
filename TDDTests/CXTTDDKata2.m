@@ -9,15 +9,21 @@
 #import "Kiwi.h"
 #import "BankAccount.h"
 #import "Account.h"
-
+#import "BankAccountDAO.h"
 SPEC_BEGIN(kata2)
     describe(@"Start kata2 with BankAccount", ^{
         
         registerMatchers(@"BG");
         
         context(@"a state component in", ^{
+            
+            __block BankAccount *_bank;
+            __block BankAccountDAO *_bankDao;
+            
+            
             beforeAll(^{
-                
+                _bank = [[BankAccount alloc] init];
+                _bankDao = [[BankAccountDAO alloc] init];
             });
             
             afterAll(^{
@@ -42,18 +48,17 @@ SPEC_BEGIN(kata2)
             });
             
             it(@"Step 3: sent money to my account and check deposit", ^{
-//                Account *_accountBefore = [Account nullMock];
-//                [_accountBefore stub:@selector(balance) andReturn:@0];
-//                Account *_accountAfter;
-//                NSInteger amount = 10;
-//                NSString *accountNumber = [NSString nullMock];
-//                NSString *description = [NSString nullMock];
-//                
-//                BankAccount *_bank = [[BankAccount alloc] init];
-//                
-//                _accountAfter = [_bank depositWithAccountNumber:accountNumber Amount:amount Description:description];
-//                
-//                [[theValue(_accountAfter.balance) should] equal:theValue(_accountBefore.balance + amount)];
+                Account *_accountBefore = [Account nullMock];
+                [_accountBefore stub:@selector(balance) andReturn:0];
+                Account *_accountAfter;
+                
+                NSInteger amount = 10;
+                NSString *accountNumber = [NSString nullMock];
+                NSString *description = [NSString nullMock];
+                [_bank stub:@selector(getAccountWithNumber:) andReturn:_accountBefore];
+                _accountAfter = [_bank depositWithAccountNumber:accountNumber Amount:amount Description:description];
+                
+                [[theValue(_accountAfter.balance) should] equal:theValue(_accountBefore.balance + amount)];
             });
         });
     });

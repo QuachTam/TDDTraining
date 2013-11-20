@@ -9,7 +9,7 @@
 #import "BankAccountDAO.h"
 
 @implementation BankAccountDAO
--(Account*)getAccountNumber:(NSString*)numberAccount{
+-(Account*)getAccountNumberDAO:(NSString*)numberAccount{
     return nil;
 }
 @end
