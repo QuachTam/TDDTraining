@@ -81,6 +81,8 @@ SPEC_BEGIN(kata2)
                 Account *accountBefore = [Account nullMock];
                 Account *accountAfter;
                 
+                accountAfter = [_bank withdraw:accountNumber Amount:10 Description:description];
+                
                 [[theValue(accountAfter.balance) should] equal:theValue(accountBefore.balance-10)];
             });
         });
