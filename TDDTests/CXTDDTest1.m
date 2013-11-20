@@ -80,7 +80,8 @@ SPEC_BEGIN(Test1)
             NSString *_string = [NSString nullMock];
             [_stack push:_string];
             [[[_stack top] should] equal:_string];
-            [_stack pop];
+            [_stack stub:@selector(pop) andReturn:_string];
+            [[[_stack pop] should] equal:_string];
         });
     });
 SPEC_END
