@@ -78,9 +78,10 @@ SPEC_BEGIN(kata2)
             
             it(@"Step 5: withdraw then balance equal balance - amount", ^{
                 
+                Account *accountBefore = [Account nullMock];
+                Account *accountAfter;
                 
-                
-                [[theValue([accountAfter.balance]) should] equal:theValue(accountBefore.balance-amount)];
+                [[theValue(accountAfter.balance) should] equal:theValue(accountBefore.balance-10)];
             });
         });
     });
