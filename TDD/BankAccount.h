@@ -16,4 +16,5 @@
 -(void)open:(NSString*)accountNumber;
 -(NSInteger)balanceCount;
 -(Account*)depositWithAccountNumber:(NSString*)accountNumber Amount:(double)amount Description:(NSString*)description;
+-(Account*)withdraw:(NSString*)accName Amount:(double)amount Description:(NSString*)description;
 @end

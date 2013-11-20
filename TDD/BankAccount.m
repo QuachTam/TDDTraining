@@ -50,4 +50,11 @@
     AT.balance +=amount;
     return AT;
 }
+
+-(Account*)withdraw:(NSString*)accName
+             Amount:(double)amount
+        Description:(NSString*)description{
+    return nil;
+}
+
 @end
