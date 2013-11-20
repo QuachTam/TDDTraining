@@ -62,7 +62,8 @@ SPEC_BEGIN(kata2)
             });
             
             it(@"Step 4: mock time now ", ^{
-                
+                NSDate *dateTemp = [NSDate nullMock];
+                Account *_acc = [[Account alloc] init];
                 [[theValue(_acc.openTimestamp) should] equal:theValue(dateTemp)];
             });
         });
