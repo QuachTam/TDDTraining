@@ -60,6 +60,11 @@ SPEC_BEGIN(kata2)
                 
                 [[theValue(_accountAfter.balance) should] equal:theValue(_accountBefore.balance + amount)];
             });
+            
+            it(@"Step 4: mock time now ", ^{
+                
+                [[theValue(_acc.openTimestamp) should] equal:theValue(dateTemp)];
+            });
         });
     });
 SPEC_END
