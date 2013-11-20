@@ -19,15 +19,18 @@ SPEC_BEGIN(kata2)
             
             __block BankAccount *_bank;
             __block BankAccountDAO *_bankDao;
-            
+            __block NSString *accountNumber;
             
             beforeAll(^{
                 _bank = [[BankAccount alloc] init];
                 _bankDao = [[BankAccountDAO alloc] init];
+                accountNumber = [NSString nullMock];
             });
             
             afterAll(^{
-                
+                _bank = nil;
+                _bankDao = nil;
+                accountNumber = nil;
             });
             
             it(@"Step 1 open account with balace = 0", ^{
@@ -53,8 +56,8 @@ SPEC_BEGIN(kata2)
                 Account *_accountAfter;
                 
                 NSInteger amount = 10;
-                NSString *accountNumber = [NSString nullMock];
                 NSString *description = [NSString nullMock];
+                
                 [_bank stub:@selector(getAccountWithNumber:) andReturn:_accountBefore];
                 _accountAfter = [_bank depositWithAccountNumber:accountNumber Amount:amount Description:description];
                 
@@ -62,8 +65,14 @@ SPEC_BEGIN(kata2)
             });
             
             it(@"Step 4: mock time now ", ^{
-                NSDate *dateTemp = [NSDate nullMock];
                 Account *_acc = [[Account alloc] init];
+                NSDate *dateTemp = [NSDate nullMock];
+                [_acc stub:@selector(openTimestamp) andReturn:dateTemp];
+                
+                NSString *description = [NSString nullMock];
+                
+                [_bank depositWithAccountNumber:accountNumber Amount:10 Description:description];
+                
                 [[theValue(_acc.openTimestamp) should] equal:theValue(dateTemp)];
             });
         });

@@ -38,12 +38,15 @@
 -(Account*)depositWithAccountNumber:(NSString*)accountNumber
                          Amount:(double)amount
                     Description:(NSString*)description{
+    
+    NSDate *dateNow = [NSDate date];
+    
     Account* BF = [self getAccountWithNumber:accountNumber];
     Account* AT = [[Account alloc] init];
     AT.balance = BF.balance;
     AT.accountNumber = BF.accountNumber;
     AT.openTimestamp = BF.openTimestamp;
-    
+    AT.openTimestamp = dateNow;
     AT.balance +=amount;
     return AT;
 }
