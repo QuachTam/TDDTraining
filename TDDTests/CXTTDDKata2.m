@@ -75,6 +75,13 @@ SPEC_BEGIN(kata2)
                 
                 [[theValue(_acc.openTimestamp) should] equal:theValue(dateTemp)];
             });
+            
+            it(@"Step 5: withdraw then balance equal balance - amount", ^{
+                
+                
+                
+                [[theValue([accountAfter.balance]) should] equal:theValue(accountBefore.balance-amount)];
+            });
         });
     });
 SPEC_END
