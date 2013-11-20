@@ -54,7 +54,16 @@
 -(Account*)withdraw:(NSString*)accName
              Amount:(double)amount
         Description:(NSString*)description{
-    return nil;
+    NSDate *dateNow = [NSDate date];
+    
+    Account* BF = [self getAccountWithNumber:accName];
+    Account* AT = [[Account alloc] init];
+    AT.balance = BF.balance;
+    AT.accountNumber = BF.accountNumber;
+    AT.openTimestamp = BF.openTimestamp;
+    AT.openTimestamp = dateNow;
+    AT.balance -=amount;
+    return AT;
 }
 
 @end

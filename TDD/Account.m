@@ -13,7 +13,7 @@
 -(id)init{
     self = [super init];
     if (self) {
-        balance =  0;
+        balance =  -1;
         openTimestamp = [NSDate date];
     }
     return self;
