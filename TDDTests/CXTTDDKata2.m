@@ -80,7 +80,7 @@ SPEC_BEGIN(kata2)
                 
                 Account *accountBefore = [Account nullMock];
                 Account *accountAfter;
-                
+                [accountBefore stub:@selector(balance) andReturn:@10];
                 
                 NSString *description = [NSString nullMock];
                 accountAfter = [_bank withdraw:accountNumber Amount:10 Description:description];
