@@ -26,12 +26,13 @@
     [arrayStack addObject:_string];
 }
 
--(void)pop{
+-(NSString*)pop{
     if (![arrayStack count]) {
         NSException *err = [NSException exceptionWithName:@"Error" reason:nil userInfo:nil];
         @throw err;
     }
     [arrayStack removeObjectAtIndex:0];
+    return nil;
 }
 
 -(NSString*)top{
