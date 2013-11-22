@@ -64,8 +64,6 @@
     AT.openTimestamp = dateNow;
     AT.balance -=amount;
     
-    
-    
     return AT;
 }
 

@@ -93,6 +93,9 @@ SPEC_BEGIN(kata2)
                 
                 Account *_acc = [Account nullMock];
                 NSDate *dateTemp = [NSDate nullMock];
+                [_acc stub:@selector(openTimestamp) andReturn:dateTemp];
+                
+                _acc = [_bank depositWithAccountNumber:accountNumber Amount:-10 Description:description];
                 
                 [[theValue(_acc.openTimestamp) should] equal:theValue(dateTemp)];
             });
