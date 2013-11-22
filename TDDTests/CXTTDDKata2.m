@@ -88,6 +88,10 @@ SPEC_BEGIN(kata2)
                 accountAfter = [_bank withdraw:accountNumber Amount:10 Description:description];
                 [[theValue(accountAfter.balance) should] equal:theValue(accountBefore.balance-10)];
             });
+            
+            it(@"Step 6: withdraw with -amount then mock time now ", ^{
+                [[theValue(_acc.openTimestamp) should] equal:theValue(dateTemp)];
+            });
         });
     });
 SPEC_END

@@ -63,6 +63,9 @@
     AT.openTimestamp = BF.openTimestamp;
     AT.openTimestamp = dateNow;
     AT.balance -=amount;
+    
+    
+    
     return AT;
 }
 
