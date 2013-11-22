@@ -90,6 +90,10 @@ SPEC_BEGIN(kata2)
             });
             
             it(@"Step 6: withdraw with -amount then mock time now ", ^{
+                
+                Account *_acc = [Account nullMock];
+                NSDate *dateTemp = [NSDate nullMock];
+                
                 [[theValue(_acc.openTimestamp) should] equal:theValue(dateTemp)];
             });
         });
