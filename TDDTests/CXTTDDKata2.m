@@ -105,9 +105,13 @@ SPEC_BEGIN(kata2)
                 [[theValue(_accAfter.balance) should] equal:theValue(accBefore.balance - 10)];
             });
             
-            it(@"Step 7 get list Transactions Occurred with accountnumber", ^{
+            it(@"Step 7: get list Transactions Occurred with accountnumber", ^{
                 [_bank stub:@selector(getTransactionsOccurred:) andReturn:@1];
                 [[theValue([_bank getTransactionsOccurred:accountNumber]) should] equal:theValue(1)];
+            });
+            
+            it(@"Step 8: get liset Transactions with times startTime <= t < stopTime", ^{
+                [[theValue([_bank getTransactionsOccurred:accountNumber StartTime:startTime StopTime:stopTime]) should] equal:theValue(5)];
             });
         });
     });
