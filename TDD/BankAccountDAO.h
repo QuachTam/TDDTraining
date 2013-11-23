@@ -10,6 +10,7 @@
 #import "Account.h"
 
 @interface BankAccountDAO : NSObject
+-(BOOL)getTransactionsOccurred:(NSString*)numberAccount;
 -(Account*)getAccountNumberDAO:(NSString*)numberAccount;
 -(NSInteger)saveDatabase;
 @end

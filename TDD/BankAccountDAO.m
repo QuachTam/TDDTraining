@@ -16,5 +16,7 @@
 -(NSInteger)saveDatabase{
     return 0;
 }
-
+-(BOOL)getTransactionsOccurred:(NSString*)numberAccount{
+    return 0;
+}
 @end
