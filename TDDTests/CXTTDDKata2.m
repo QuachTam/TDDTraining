@@ -90,18 +90,13 @@ SPEC_BEGIN(kata2)
             });
             
             it(@"Step 6: withdraw with -amount then mock time now ", ^{
-                
-                Account *_acc = [Account nullMock];
+                Account *accBefore = [Account nullMock];
                 NSDate *dateTemp = [NSDate nullMock];
-                [_acc stub:@selector(openTimestamp) andReturn:dateTemp];
-                
+                [accBefore stub:@selector(openTimestamp) andReturn:dateTemp];
                 NSString *description = [NSString nullMock];
-                [_bank stub:@selector(getAccountNumber) andReturn:_acc];
-                Account *_accAfter;
+                Account *_accAfter = [_bank withdraw:accountNumber Amount:-10 Description:description];
                 [_accAfter stub:@selector(openTimestamp) andReturn:dateTemp];
-                _accAfter = [_bank depositWithAccountNumber:accountNumber Amount:10 Description:description];
-                
-                [[theValue(_acc.openTimestamp) should] equal:theValue(dateTemp)];
+                [[theValue(_accAfter.openTimestamp) should] equal:theValue(dateTemp)];
             });
         });
     });
