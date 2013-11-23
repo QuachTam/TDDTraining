@@ -22,4 +22,5 @@
 -(Account*)withdraw:(NSString*)accName Amount:(double)amount Description:(NSString*)description;
 - (BOOL)saveDatabase;
 -(BOOL)getTransactionsOccurred:(NSString*)accountNumber;
+-(NSInteger)getTransactionsOccurred:(NSString*)accountNumber StartTime:(NSDate*)start StopTime:(NSDate*)stop;
 @end

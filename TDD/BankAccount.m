@@ -77,6 +77,8 @@
     return [bankDao getTransactionsOccurred:accountNumber];
 }
 
-
+-(NSInteger)getTransactionsOccurred:(NSString*)accountNumber StartTime:(NSDate*)start StopTime:(NSDate*)stop{
+    return 5;
+}
 
 @end
