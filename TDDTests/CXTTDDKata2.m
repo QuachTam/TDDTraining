@@ -104,6 +104,10 @@ SPEC_BEGIN(kata2)
                 [[theValue(_accAfter.openTimestamp) should] equal:theValue(dateTemp)];
                 [[theValue(_accAfter.balance) should] equal:theValue(accBefore.balance - 10)];
             });
+            
+            it(@"Step 7 get list Transactions Occurred with accountnumber", ^{
+                [[theValue([_bank getTransactionsOccurred:accountNumber]) should] equal:theValue(1)];
+            });
         });
     });
 SPEC_END
