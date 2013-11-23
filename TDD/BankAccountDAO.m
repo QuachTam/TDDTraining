@@ -19,4 +19,7 @@
 -(BOOL)getTransactionsOccurred:(NSString*)numberAccount{
     return 0;
 }
+-(NSInteger)getTransactionsOccurred:(NSString*)accountNumber StartTime:(NSDate*)start StopTime:(NSDate*)stop{
+    return 0;
+}
 @end

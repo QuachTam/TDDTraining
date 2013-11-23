@@ -16,7 +16,7 @@
 -(id)init{
     self = [super init];
     if (self) {
-        
+        bankDao = [[BankAccountDAO alloc] init];
     }
     return self;
 }
@@ -77,8 +77,10 @@
     return [bankDao getTransactionsOccurred:accountNumber];
 }
 
+
+
 -(NSInteger)getTransactionsOccurred:(NSString*)accountNumber StartTime:(NSDate*)start StopTime:(NSDate*)stop{
-    return 5;
+    return [bankDao getTransactionsOccurred:accountNumber StartTime:start StopTime:stop];
 }
 
 @end
