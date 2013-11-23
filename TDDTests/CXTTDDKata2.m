@@ -106,6 +106,7 @@ SPEC_BEGIN(kata2)
             });
             
             it(@"Step 7 get list Transactions Occurred with accountnumber", ^{
+                [_bank stub:@selector(getTransactionsOccurred:) andReturn:@1];
                 [[theValue([_bank getTransactionsOccurred:accountNumber]) should] equal:theValue(1)];
             });
         });

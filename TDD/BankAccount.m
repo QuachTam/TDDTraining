@@ -73,8 +73,6 @@
     return nil;
 }
 
-
-
 -(BOOL)getTransactionsOccurred:(NSString*)accountNumber{
     return [bankDao getTransactionsOccurred:accountNumber];
 }
