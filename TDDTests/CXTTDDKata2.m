@@ -93,6 +93,7 @@ SPEC_BEGIN(kata2)
                 Account *accBefore = [Account nullMock];
                 NSDate *dateTemp = [NSDate nullMock];
                 [accBefore stub:@selector(openTimestamp) andReturn:dateTemp];
+                [accBefore stub:@selector(balance) andReturn:@10];
                 NSString *description = [NSString nullMock];
                 Account *_accAfter = [_bank withdraw:accountNumber Amount:-10 Description:description];
                 [_accAfter stub:@selector(openTimestamp) andReturn:dateTemp];

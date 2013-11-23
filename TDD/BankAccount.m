@@ -62,6 +62,9 @@
     AT.accountNumber = BF.accountNumber;
     AT.openTimestamp = BF.openTimestamp;
     AT.openTimestamp = dateNow;
+    if (amount<0) {
+        amount = -amount;
+    }
     AT.balance -=amount;
     
     return AT;
