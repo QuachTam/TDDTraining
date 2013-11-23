@@ -58,16 +58,19 @@
     
     Account* BF = [self getAccountWithNumber:accName];
     Account* AT = [[Account alloc] init];
-    AT.balance = BF.balance;
-    AT.accountNumber = BF.accountNumber;
-    AT.openTimestamp = BF.openTimestamp;
-    AT.openTimestamp = dateNow;
-    if (amount<0) {
-        amount = -amount;
+    BankAccountDAO *_bankDao = [[BankAccountDAO alloc] init];
+    if ([_bankDao saveDatabase]) {
+        AT.balance = BF.balance;
+        AT.accountNumber = BF.accountNumber;
+        AT.openTimestamp = BF.openTimestamp;
+        AT.openTimestamp = dateNow;
+        if (amount<0) {
+            amount = -amount;
+        }
+        AT.balance -=amount;
+        return AT;
     }
-    AT.balance -=amount;
-    
-    return AT;
+    return nil;
 }
 
 @end
