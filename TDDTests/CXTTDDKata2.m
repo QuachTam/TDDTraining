@@ -113,8 +113,8 @@ SPEC_BEGIN(kata2)
             it(@"Step 8: get liset Transactions with times startTime <= t < stopTime", ^{
                 NSDate *startTime = [NSDate nullMock];
                 NSDate *stopTime = [NSDate nullMock];
-                
-                [[theValue([_bank getTransactionsOccurred:accountNumber StartTime:startTime StopTime:stopTime]) should] equal:theValue(5)];
+                [BankAccountDAO stub:@selector(getTransactionsOccurred:StartTime:StopTime:) andReturn:@1];
+                [[theValue([_bank getTransactionsOccurred:accountNumber StartTime:startTime StopTime:stopTime]) should] equal:theValue(1)];
             });
         });
     });

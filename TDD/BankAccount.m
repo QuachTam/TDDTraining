@@ -79,8 +79,8 @@
 
 
 
--(NSInteger)getTransactionsOccurred:(NSString*)accountNumber StartTime:(NSDate*)start StopTime:(NSDate*)stop{
-    return [bankDao getTransactionsOccurred:accountNumber StartTime:start StopTime:stop];
+-(BOOL)getTransactionsOccurred:(NSString*)accountNumber StartTime:(NSDate*)start StopTime:(NSDate*)stop{
+    return [BankAccountDAO getTransactionsOccurred:accountNumber StartTime:start StopTime:stop];
 }
 
 @end
