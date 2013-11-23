@@ -80,8 +80,9 @@ SPEC_BEGIN(kata2)
                 
                 Account *accountBefore = [Account nullMock];
                 Account *accountAfter;
+                [_bank stub:@selector(bankDao) andReturn:_bankDao];
+                [_bank stub:@selector(saveDatabase) andReturn:@1];
                 [accountBefore stub:@selector(setBalance:) andReturn:@10];
-                
                 [_bank stub:@selector(getAccountWithNumber:) andReturn:accountBefore];
                 
                 NSString *description = [NSString nullMock];
@@ -92,8 +93,11 @@ SPEC_BEGIN(kata2)
             it(@"Step 6: withdraw with -amount then mock time now ", ^{
                 Account *accBefore = [Account nullMock];
                 NSDate *dateTemp = [NSDate nullMock];
+                [_bank stub:@selector(saveDatabase) andReturn:@1];
                 [accBefore stub:@selector(openTimestamp) andReturn:dateTemp];
-                [accBefore stub:@selector(balance) andReturn:@10];
+                [accBefore stub:@selector(setBalance:) andReturn:@10];
+                [_bankDao stub:@selector(saveDatabase) andReturn:@1];
+                
                 NSString *description = [NSString nullMock];
                 Account *_accAfter = [_bank withdraw:accountNumber Amount:-10 Description:description];
                 [_accAfter stub:@selector(openTimestamp) andReturn:dateTemp];

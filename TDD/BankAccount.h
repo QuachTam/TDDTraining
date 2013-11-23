@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "Account.h"
+#import "BankAccountDAO.h"
 
 @interface BankAccount : NSObject{
     Account *_account;
+    BankAccountDAO *bankDao;
 }
+@property (nonatomic, retain) BankAccountDAO *bankDao;
 -(Account*)getAccountWithNumber:(NSString*)numberAcc;
 -(void)open:(NSString*)accountNumber;
 -(NSInteger)balanceCount;
 -(Account*)depositWithAccountNumber:(NSString*)accountNumber Amount:(double)amount Description:(NSString*)description;
 -(Account*)withdraw:(NSString*)accName Amount:(double)amount Description:(NSString*)description;
+- (BOOL)saveDatabase;
 @end

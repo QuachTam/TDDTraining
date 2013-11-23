@@ -12,4 +12,9 @@
 -(Account*)getAccountNumberDAO:(NSString*)numberAccount{
     return nil;
 }
+
+-(NSInteger)saveDatabase{
+    return 0;
+}
+
 @end

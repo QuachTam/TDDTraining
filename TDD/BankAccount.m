@@ -12,7 +12,7 @@
 
 
 @implementation BankAccount
-
+@synthesize bankDao;
 -(id)init{
     self = [super init];
     if (self) {
@@ -31,8 +31,7 @@
 }
 
 -(Account*)getAccountWithNumber:(NSString*)numberAcc{
-    BankAccountDAO *_bankDao = [[BankAccountDAO alloc] init];
-    return [_bankDao getAccountNumberDAO:numberAcc];
+    return [bankDao getAccountNumberDAO:numberAcc];
 }
 
 -(Account*)depositWithAccountNumber:(NSString*)accountNumber
@@ -50,7 +49,9 @@
     AT.balance +=amount;
     return AT;
 }
-
+- (BOOL)saveDatabase{
+    return [bankDao saveDatabase];
+}
 -(Account*)withdraw:(NSString*)accName
              Amount:(double)amount
         Description:(NSString*)description{
@@ -58,8 +59,7 @@
     
     Account* BF = [self getAccountWithNumber:accName];
     Account* AT = [[Account alloc] init];
-    BankAccountDAO *_bankDao = [[BankAccountDAO alloc] init];
-    if ([_bankDao saveDatabase]) {
+    if ([self saveDatabase]) {
         AT.balance = BF.balance;
         AT.accountNumber = BF.accountNumber;
         AT.openTimestamp = BF.openTimestamp;
