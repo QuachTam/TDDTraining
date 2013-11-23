@@ -21,4 +21,5 @@
 -(Account*)depositWithAccountNumber:(NSString*)accountNumber Amount:(double)amount Description:(NSString*)description;
 -(Account*)withdraw:(NSString*)accName Amount:(double)amount Description:(NSString*)description;
 - (BOOL)saveDatabase;
+-(BOOL)getTransactionsOccurred:(NSString*)accountNumber;
 @end

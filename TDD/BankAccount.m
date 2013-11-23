@@ -73,4 +73,10 @@
     return nil;
 }
 
+-(BOOL)getTransactionsOccurred:(NSString*)accountNumber{
+    return YES;
+}
+
+
+
 @end
