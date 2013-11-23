@@ -97,6 +97,7 @@ SPEC_BEGIN(kata2)
                 Account *_accAfter = [_bank withdraw:accountNumber Amount:-10 Description:description];
                 [_accAfter stub:@selector(openTimestamp) andReturn:dateTemp];
                 [[theValue(_accAfter.openTimestamp) should] equal:theValue(dateTemp)];
+                [[theValue(_accAfter.balance) should] equal:theValue(accBefore.balance - 10)];
             });
         });
     });
