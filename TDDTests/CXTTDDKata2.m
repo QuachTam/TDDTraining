@@ -119,6 +119,8 @@ SPEC_BEGIN(kata2)
             
             
             it(@"Step 9: get list n account transactions new", ^{
+                _bankDao = _bank.bankDao;
+                [_bankDao stub:@selector(getListTransactionLatesDAO:) andReturn:@1];
                 [[theValue([_bank getListTransactionLates:10]) should] equal:theValue(1)];
             });
         });

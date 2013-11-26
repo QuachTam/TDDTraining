@@ -14,5 +14,5 @@
 -(Account*)getAccountNumberDAO:(NSString*)numberAccount;
 -(NSInteger)saveDatabase;
 +(BOOL)getTransactionsOccurred:(NSString*)accountNumber StartTime:(NSDate*)start StopTime:(NSDate*)stop;
-+(NSInteger)getListTransactionLates:(NSInteger)numberAccount;
+-(NSInteger)getListTransactionLatesDAO:(NSInteger)numberAccount;
 @end

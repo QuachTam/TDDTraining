@@ -84,7 +84,7 @@
 }
 
 -(NSInteger)getListTransactionLates:(NSInteger)numberAccount{
-    return [BankAccountDAO getListTransactionLates:numberAccount];
+    return [bankDao getListTransactionLatesDAO:numberAccount];
 }
 
 @end
