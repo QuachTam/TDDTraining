@@ -22,4 +22,7 @@
 +(BOOL)getTransactionsOccurred:(NSString*)accountNumber StartTime:(NSDate*)start StopTime:(NSDate*)stop{
     return 0;
 }
++(NSInteger)getListTransactionLates:(NSInteger)numberAccount{
+    return 0;
+}
 @end
