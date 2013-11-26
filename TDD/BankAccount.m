@@ -83,4 +83,8 @@
     return [BankAccountDAO getTransactionsOccurred:accountNumber StartTime:start StopTime:stop];
 }
 
+-(NSInteger)getListTransactionLates:(NSInteger)numberAccount{
+    return 1;
+}
+
 @end
