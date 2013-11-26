@@ -116,6 +116,11 @@ SPEC_BEGIN(kata2)
                 [BankAccountDAO stub:@selector(getTransactionsOccurred:StartTime:StopTime:) andReturn:@1];
                 [[theValue([_bank getTransactionsOccurred:accountNumber StartTime:startTime StopTime:stopTime]) should] equal:theValue(1)];
             });
+            
+            
+            it(@"Step 9: get list n account transactions new", ^{
+                [[theValue([_bank getListTransactionLates:10]) should] equal:theValue(1)];
+            });
         });
     });
 SPEC_END
